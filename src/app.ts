@@ -1,19 +1,8 @@
-// classes
-class Invoice {
-    // client: string;
-    // details: string;
-    // amount: number;
+// interface
+interface isPerson
 
-    constructor(
-        readonly client: string,
-        private details: string,
-        public amount: number,
-    ){}
 
-    format() {
-        return `${this.client} owes £${this.amount} for ${this.details}`;
-    }
-}
+import {Invoice} from './classes/Invoice.js';
 
 const invOne = new Invoice('daniel', 'for a new drum pad', 400)
 const invTwo = new Invoice('Mary', 'for a new dress',200)
